@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Digital-7";
+  src: url(./digital-7.ttf) format("truetype");
+}
+
+.container {
+  background: #656565;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container .analog-clock {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  -webkit-box-shadow: 9.91px 9.91px 15px #5c5c5c, -9.91px -9.91px 15px #6e6e6e;
+          box-shadow: 9.91px 9.91px 15px #5c5c5c, -9.91px -9.91px 15px #6e6e6e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .analog-clock .inner {
+  height: 92%;
+  width: 92%;
+  border-radius: 50%;
+  -webkit-box-shadow: inset 9.91px 9.91px 15px #5c5c5c, inset -9.91px -9.91px 15px #6e6e6e;
+          box-shadow: inset 9.91px 9.91px 15px #5c5c5c, inset -9.91px -9.91px 15px #6e6e6e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .analog-clock .inner .center {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #656565;
+  -webkit-box-shadow: 3px 3px 15px #5a5a5a, -3px -3px 15px #707070;
+          box-shadow: 3px 3px 15px #5a5a5a, -3px -3px 15px #707070;
+  z-index: 1000;
+  position: relative;
+}
+
+.container .analog-clock .inner .center .hour,
+.container .analog-clock .inner .center .min,
+.container .analog-clock .inner .center .second {
+  position: absolute;
+  bottom: 50%;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.container .analog-clock .inner .center .hour {
+  height: 100px;
+  border-radius: 5px;
+  width: 10px;
+  background-color: #ff331f;
+  z-index: -1;
+}
+
+.container .analog-clock .inner .center .min {
+  height: 120px;
+  width: 7px;
+  border-radius: 4px;
+  z-index: -2;
+  background-color: #657ed4;
+}
+
+.container .analog-clock .inner .center .second {
+  z-index: -3;
+  height: 130px;
+  width: 3px;
+  border-radius: 3px;
+  background-color: #fbfbff;
+}
+
+.container .digital-clock {
+  background-color: #8fc93a;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+}
+
+.container .digital-clock > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  color: #fff;
+  font-family: "Digital-7";
+  padding: 20px;
+  font-size: 2.5rem;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0px 5px;
+}
+/*# sourceMappingURL=style.css.map */
